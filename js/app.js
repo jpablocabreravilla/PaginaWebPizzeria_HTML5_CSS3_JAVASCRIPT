@@ -73,7 +73,6 @@ function validar(e) {
      }
 }
 
-
 // Eventos del formulario
 formulario.addEventListener("submit", validar);
 
@@ -88,7 +87,6 @@ window.addEventListener("scroll", function () {
           fullSize = document.documentElement.offsetHeight,
           sizeVP = document.documentElement.clientHeight;
 
-
      if (scroll > 100) {
           btnTop.classList.add("show");
      } else {
@@ -96,7 +94,7 @@ window.addEventListener("scroll", function () {
      }
 
      // MODIFICAR ELEMENTO CUANDO LLEGUE A FINAL DE PAGINA
-     if (fullSize == (scroll + sizeVP)) {
+     if (fullSize == Math.round(scroll + sizeVP)) {
           btnTop.classList.add("scrollFinal");
      } else {
           btnTop.classList.remove("scrollFinal");
