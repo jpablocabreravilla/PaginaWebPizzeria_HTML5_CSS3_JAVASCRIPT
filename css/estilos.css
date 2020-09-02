@@ -231,7 +231,7 @@ body {
 
 /* SECCION SERVICIOS */
 #servicios {
-  height: 100vh;
+  height: 100%;
   background: #fff;
   padding: 40px;
 }
@@ -336,6 +336,7 @@ body {
 /* SECCION DE EQUIPO */
 #equipo {
   height: 100vh;
+  width: 100vw;
   display: flex;
 }
 
@@ -839,7 +840,7 @@ footer {
   /* FOOTER */
   footer {
     flex-wrap: wrap;
-    margin-top: 0px;
+    margin-top: 50px;
   }
 
   .sociales-metodo {
